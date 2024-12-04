@@ -12,12 +12,16 @@ const globalErrorHandler = require('./Controllers/errorController')
 let app = express();
 
 app.use(
-    cors({
-      origin: [`${process.env.FRONTEND_URL_LOCAL},${process.env.FRONTEND_URL_DEPLOYED_1}`],
-      methods: ["GET", "PUT", "DELETE", "POST","PATCH"],
-      credentials: true,
-    })
-  );
+  cors({
+    origin: [
+      process.env.FRONTEND_URL_LOCAL,
+      process.env.FRONTEND_URL_DEPLOYED_1
+    ],
+    methods: ["GET", "PUT", "DELETE", "POST", "PATCH"],
+    credentials: true,
+  })
+);
+
 
 app.use(cookieParser());  
 app.use(express.json());
