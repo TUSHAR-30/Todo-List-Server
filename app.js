@@ -14,7 +14,7 @@ let app = express();
 app.use(
     cors({
       // origin: ["http://localhost:5173"],
-      origin: ["https://tushar-30.github.io/"],
+      origin: ["https://tushar-30.github.io"],
       methods: ["GET", "PUT", "DELETE", "POST","PATCH"],
       credentials: true,
     })
