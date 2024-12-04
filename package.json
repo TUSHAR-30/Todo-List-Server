@@ -2,12 +2,12 @@
   "name": "node-js-with-express",
   "version": "1.0.0",
   "description": "Learning express js with node",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "start": "SET NODE_ENV=development& nodemon server.js",
     "start_prod": "SET NODE_ENV=production& nodemon server.js"
   },
-  "author": "Manoj Jha",
+  "author": "Tushar Chawla",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
